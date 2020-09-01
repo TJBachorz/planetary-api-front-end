@@ -29,6 +29,15 @@ h1 {
     border-radius: 5px;
 }
 
+.planet-image {
+    width:150px;
+    height: 150px;
+}
+
+.result {
+    color: cyan;
+}
+
 /* .planets-card p {
     font-size: 20px;
 }
