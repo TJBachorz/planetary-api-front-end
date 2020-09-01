@@ -9,11 +9,15 @@ body {
   background-image: linear-gradient(#1A7474 0%, #330867 100%);
   /* color: #4d4d4d; */
   color: white;
-  height: 2000px;
+  height: 2200px;
 }
 
 h1 {
     text-align: center;
+}
+
+main img {
+    width: 100px;
 }
 
 .planet-card {
@@ -29,20 +33,20 @@ h1 {
     border-radius: 5px;
 }
 
-/* .planets-card p {
+/* .planet-card p {
     font-size: 20px;
 }
 
-.planets-card img {
+.planet-card img {
     width: 100px;
     transition: all ease 500ms;
 }
 
-.planets-card img:hover {
+.planet-card img:hover {
     transform: scale(1.4);
 }
 
-.planets-card {
+.planet-card {
     font-size: 1.5rem;
 } */
 
@@ -50,4 +54,167 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* @keyframes spin-negative {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+} */
+
+body {
+    background-color: #333;
+}
+
+.animation {
+    height: 100vh;
+}
+
+.planetPosition {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.orbit-one {
+    width: 85%;
+    height: 85%;
+    background-color: #33333347;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.orbit-two {
+    width: 100%;
+    height: 100%;
+    background-color: #afa5a53b;
+    border-radius: 50%;
+}
+
+.orbit-three {
+    width: 125%;
+    height: 125%;
+    background-color: #33333347;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.center {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    /* background-image: url(https://image.flaticon.com/icons/svg/814/814513.svg); */
+}
+
+.sun {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 250px;
+}
+
+img {
+    width: 15%;
+}
+
+.smallPlanet {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.mercury {
+    animation: spin 5s linear 0s infinite;
+}
+
+.mercury img {
+    top: 0px;
+    position: absolute;
+}
+
+.venus {
+    animation: spin 6s linear 0s infinite;
+}
+
+.venus img {
+    right: -60px;
+    position: absolute;
+}
+
+.earth {
+    animation: spin 7s linear 0s infinite;
+}
+
+.earth img {
+    left: -120px;
+    position: absolute;
+}
+
+.mars {
+    animation: spin 8s linear 0s infinite;
+}
+
+.mars img {
+    bottom: -180px;
+    position: absolute;
+}
+.jupiter {
+    animation: spin 9s linear 0s infinite;
+}
+
+.jupiter img {
+    top: -240px;
+    position: absolute;
+}
+.saturn {
+    animation: spin 10s linear 0s infinite;
+}
+
+.saturn img {
+    right: -300px;
+    position: absolute;
+}
+.uranus {
+    animation: spin 11s linear 0s infinite;
+}
+
+.uranus img {
+    left: -360px;
+    position: absolute;
+}
+.neptune {
+    animation: spin 12s linear 0s infinite;
+}
+
+.neptune img {
+    bottom: -420px;
+    position: absolute;
+}
+
+.pluto {
+    animation: spin 13s linear 0s infinite;
+}
+
+.pluto img {
+    top: -480px;
+    position: absolute;
 }
