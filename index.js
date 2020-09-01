@@ -23,7 +23,7 @@ function makeCardSection() {
 
 function planetName(planet, planetCard) {
     const name = document.createElement('h3')
-    name.textContent = `${planet.name}`
+    name.textContent = planet.name
     planetCard.appendChild(name)
 }
 
