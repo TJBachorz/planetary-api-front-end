@@ -9,11 +9,13 @@ body {
   background-image: linear-gradient(#1A7474 0%, #330867 100%);
   /* color: #4d4d4d; */
   color: white;
-  height: 2200px;
+  height: 2300px;
 }
 
 h1 {
     text-align: center;
+    position: relative;
+    z-index: 100;
 }
 
 main img {
@@ -31,6 +33,7 @@ main img {
     margin: 2rem;
     box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
     border-radius: 5px;
+    z-index: 20;
 }
 
 .planet-image {
@@ -45,6 +48,7 @@ main img {
 .planet-card img {
     width: 100px;
     transition: all ease 500ms;
+    /* position: relative; */
 }
 
 .planet-card img:hover {
@@ -94,76 +98,94 @@ body {
     align-items: center;
 }
 
-/* .orbit-nine {
+.orbit-nine {
     width: 305%;
     height: 305%;
-    background-color: #afa5a53b;
+    /* background-color: #afa5a53b; */
+    border: 1px solid gray;
     position: absolute;
     border-radius: 50%;
+    z-index: 1;
 }
 
 .orbit-eight {
     width: 275%;
     height: 275%;
-    background-color: #33333347;
+    /* background-color: #33333347; */
+    border: 1px solid gray;
     position: absolute;
     border-radius: 50%;
+    z-index: 1;
 }
 
 .orbit-seven {
     width: 245%;
     height: 245%;
-    background-color: #afa5a53b;
+    /* background-color: #afa5a53b; */
+    border: 1px solid gray;
     position: absolute;
     border-radius: 50%;
+    /* z-index: 1; */
 }
 
 .orbit-six {
     width: 220%;
     height: 220%;
-    background-color: #33333347;
+    /* background-color: #33333347; */
+    border: 1px solid gray;
     position: absolute;
     border-radius: 50%;
+    /* z-index: 1; */
 }
 
 .orbit-five {
     width: 190%;
     height: 190%;
-    background-color: #afa5a53b;
+    /* background-color: #afa5a53b; */
+    border: 1px solid gray;
     position: absolute;
     border-radius: 50%;
+    /* z-index: 10000; */
 }
 
 .orbit-four {
     width: 160%;
     height: 160%;
-    background-color: #33333347;
+    /* background-color: #33333347; */
+    border: 1px solid gray;
     position: absolute;
     border-radius: 50%;
+    /* z-index: 1; */
 }
 
 .orbit-three {
     width: 135%;
     height: 135%;
-    background-color: #afa5a53b;
+    /* background-color: #afa5a53b; */
+    border: 1px solid gray;
     position: absolute;
     border-radius: 50%;
+    /* z-index: 1; */
 }
 
 .orbit-two {
     width: 110%;
     height: 110%;
-    background-color: #33333347;
+    /* background-color: #33333347; */
+    border: 1px solid gray;
     position: absolute;
     border-radius: 50%;
-}
+    /* z-index: 1; */
+} 
 
 .orbit-one {
     width: 85%;
     height: 85%;
-    background-color: #afa5a53b;
+    /* background-color: #afa5a53b; */
     border-radius: 50%;
-} */
+    border: 1px solid gray;
+    /* z-index: 1; */
+}
 
 .center {
     position: absolute;
