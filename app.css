@@ -33,7 +33,16 @@ main img {
     border-radius: 5px;
 }
 
-/* .planet-card p {
+.planet-image {
+    width:150px;
+    height: 150px;
+}
+
+.result {
+    color: cyan;
+}
+
+/* .planets-card p {
     font-size: 20px;
 }
 
