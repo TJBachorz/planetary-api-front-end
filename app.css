@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #eceff1; */
+  background-image: linear-gradient(#1A7474 0%, #330867 100%);
+  /* color: #4d4d4d; */
+  color: white;
+  height: 2000px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.planet-card {
+    /* border: 2px solid green; */
+    text-align: center;
+    background-color: white;
+    background-color: #4d4d4d;
+    color: white;
+    width: 350px;
+    padding: 10px;
+    margin: 2rem;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    border-radius: 5px;
+}
+
+/* .planets-card p {
+    font-size: 20px;
+}
+
+.planets-card img {
+    width: 100px;
+    transition: all ease 500ms;
+}
+
+.planets-card img:hover {
+    transform: scale(1.4);
+}
+
+.planets-card {
+    font-size: 1.5rem;
+} */
+
+.test-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

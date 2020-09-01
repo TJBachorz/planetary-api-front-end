@@ -4,8 +4,8 @@ fetch("http://localhost:3000/planets")
 
 
 function makePlanetCard(planets) {
-    planetCard = makeCardSection()
     planets.forEach(planet => {
+        planetCard = makeCardSection()
         planetName(planet, planetCard)
         planetMoons(planet, planetCard)
         planetGravity(planet, planetCard)
@@ -14,12 +14,14 @@ function makePlanetCard(planets) {
 }
 
 function makeCardSection() {
-    const body = document.querySelector('body')
-    const planetCard = document.createElement('section')
+    // const body = document.querySelector('body')
+    const body = document.querySelector('.test-card')
+    const planetCard = document.createElement('p')
     planetCard.classList.add('planet-card')
     body.appendChild(planetCard)
     return planetCard
 }
+
 
 function planetName(planet, planetCard) {
     const name = document.createElement('h3')
