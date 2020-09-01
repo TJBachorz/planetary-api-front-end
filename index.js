@@ -11,6 +11,7 @@ function makePlanetCard(planets) {
         planetMoons(planet, planetCard)
         planetGravity(planet, planetCard)
         planetDiameter(planet, planetCard)
+        planetDistance(planet, planetCard)
     })
 }
 
@@ -48,6 +49,12 @@ function planetDiameter(planet, planetCard) {
     const diameter = document.createElement('p')
     diameter.innerHTML = `Diameter: <span class='result'><strong>${planet.diameter}</strong></span>`
     planetCard.appendChild(diameter)
+}
+
+function planetDistance(planet, planetCard) {
+    const distance = document.createElement('p')
+    distance.innerHTML = `Distance from the Sun: <span class='result'><strong>${planet.perihelion} km</strong></span>`
+    planetCard.appendChild(distance)
 }
 
 function displayPlanetImage(planet, planetCard) {
