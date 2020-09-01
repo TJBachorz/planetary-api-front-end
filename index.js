@@ -46,7 +46,7 @@ function planetGravity(planet, planetCard) {
 
 function planetDiameter(planet, planetCard) {
     const diameter = document.createElement('p')
-    diameter.innerHTML = `Diameter: <span class='result'><strong>${planet.diameter}</strong></span>`
+    diameter.innerHTML = `Diameter: <span class='result'><strong>${planet.diameter} km</strong></span>`
     planetCard.appendChild(diameter)
 }
 
