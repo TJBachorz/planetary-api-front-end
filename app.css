@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(#1A7474 0%, #330867 100%);
+  color: white;
+  height: 2300px;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+main img {
+    width: 100px;
+}
+
+.planet-card {
+    text-align: center;
+    background-color: white;
+    background-color: #4d4d4d;
+    color: white;
+    width: 350px;
+    padding: 10px;
+    margin: 2rem;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    border-radius: 5px;
+    z-index: 20;
+}
+
+.planet-image {
+    width:150px;
+    height: 150px;
+}
+
+.result {
+    color: cyan;
+}
+
+.planet-card img {
+    width: 100px;
+    transition: all ease 500ms;
+    /* position: relative; */
+}
+
+.planet-card img:hover {
+    transform: scale(1.4);
+}
+
+.test-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background-color: #333;
+}
+
+.animation {
+    height: 100vh;
+}
+
+.planetPosition {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.orbit-nine {
+    width: 305%;
+    height: 305%;
+    border: 1px solid gray;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.orbit-eight {
+    width: 275%;
+    height: 275%;
+    border: 1px solid gray;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.orbit-seven {
+    width: 245%;
+    height: 245%;
+    border: 1px solid gray;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.orbit-six {
+    width: 220%;
+    height: 220%;
+    border: 1px solid gray;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.orbit-five {
+    width: 190%;
+    height: 190%;
+    border: 1px solid gray;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.orbit-four {
+    width: 160%;
+    height: 160%;
+    border: 1px solid gray;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.orbit-three {
+    width: 135%;
+    height: 135%;
+    border: 1px solid gray;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.orbit-two {
+    width: 110%;
+    height: 110%;
+    border: 1px solid gray;
+    position: absolute;
+    border-radius: 50%;
+} 
+
+.orbit-one {
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.center {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+}
+
+.sun {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 250px;
+}
+
+img {
+    width: 15%;
+}
+
+.smallPlanet {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.mercury {
+    animation: spin 5s linear 0s infinite;
+}
+
+.mercury img {
+    top: 0px;
+    position: absolute;
+}
+
+.venus {
+    animation: spin 6s linear 0s infinite;
+}
+
+.venus img {
+    right: -60px;
+    position: absolute;
+}
+
+.earth {
+    animation: spin 7s linear 0s infinite;
+}
+
+.earth img {
+    left: -120px;
+    position: absolute;
+}   
+
+.mars {
+    animation: spin 8s linear 0s infinite;
+}
+
+.mars img {
+    bottom: -180px;
+    position: absolute;
+}
+.jupiter {
+    animation: spin 9s linear 0s infinite;
+}
+
+.jupiter img {
+    top: -240px;
+    position: absolute;
+}
+.saturn {
+    animation: spin 10s linear 0s infinite;
+}
+
+.saturn img {
+    right: -300px;
+    position: absolute;
+}
+.uranus {
+    animation: spin 11s linear 0s infinite;
+}
+
+.uranus img {
+    left: -360px;
+    position: absolute;
+}
+.neptune {
+    animation: spin 12s linear 0s infinite;
+}
+
+.neptune img {
+    bottom: -420px;
+    position: absolute;
+}
+
+.pluto {
+    animation: spin 13s linear 0s infinite;
+}
+
+.pluto img {
+    top: -480px;
+    position: absolute;
+}
